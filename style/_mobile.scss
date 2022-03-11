@@ -1,0 +1,240 @@
+@media screen and (max-width: 767.98px) {
+  /* ============================================ */
+  /*                     .HEAD                    */
+  /* ============================================ */
+  .head {
+    position: relative;
+    z-index: 4;
+  }
+
+  // .head-button
+  .head-button {
+    display: none;
+  }
+
+  //   ..head-toogle
+  .head-toogle {
+    display: block;
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: 20px;
+
+    img {
+      width: 15px;
+      height: 15px;
+    }
+
+    &:hover {
+      background: rgba(0, 0, 0, 0.204);
+    }
+
+    .close {
+      display: none;
+    }
+  }
+
+  //   .head-menu
+  .head-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translateX(-50%) scale(0);
+
+    width: 80%;
+    background: white;
+    z-index: 5;
+    border-radius: 10px;
+    padding: 1.5rem 0;
+
+    transform-origin: top;
+    transition: 0.5s all ease;
+
+    a {
+      &::before {
+        top: calc(0rem + 100%);
+      }
+    }
+  }
+  /* ------------------ ACTIVE ------------------ */
+  .head-menu.active {
+    transform: translateX(-50%) scale(1);
+    z-index: 5;
+  }
+
+  .head-toogle.active {
+    .close {
+      display: block;
+    }
+
+    .hamber {
+      display: none;
+    }
+  }
+
+  .head.active::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: -0%;
+    width: 100%;
+    height: 100vh;
+
+    background: rgba(0, 0, 0, 0.345);
+  }
+
+  /* ------------------ .MAINX ------------------ */
+  /* ============================================ */
+  /*                     .SEV1                    */
+  /* ============================================ */
+  .sec1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+    padding-left: 0;
+
+    .sec1-img {
+      width: 100%;
+
+      background-image: url(../images/bg-intro-mobile.svg);
+
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: top -110% right -20%;
+      overflow: hidden;
+
+      img {
+        transform: translateY(-30%);
+      }
+    }
+
+    .sec1-text {
+      width: 100%;
+      transform: translateY(-60%);
+      padding: 0 1rem;
+      margin-bottom: 2rem;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      text-align: center;
+    }
+  }
+
+  /* ============================================ */
+  /*                     .SEC2                    */
+  /* ============================================ */
+  .sec2 {
+    margin-top: -10rem;
+    align-items: center;
+
+    .sec2-text {
+      margin: auto;
+      text-align: center;
+    }
+
+    .sec2-option {
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      grid-template-columns: unset;
+      gap: 1rem;
+
+      .option-block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        text-align: center;
+        margin: auto;
+
+        p {
+          max-width: 45ch;
+        }
+      }
+    }
+  }
+
+  .sec3 {
+    align-items: center;
+    padding: 0 1rem;
+
+    // .sec3-text
+    .sec3-text {
+      text-align: center;
+    }
+
+    // .sec3-news
+    .sec3-news {
+      display: grid;
+      grid-template-columns: unset;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      gap: 1rem;
+    }
+  }
+
+  /* ============================================ */
+  /*                     .FOOT                    */
+  /* ============================================ */
+  .foot {
+    margin-top: 2rem;
+  }
+
+  .foot-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  //   .foot-icon
+  .foot-icon {
+    gap: 2rem;
+
+    .icon-social {
+      gap: 1.2rem;
+    }
+  }
+
+  //   .foot-about
+  .foot-about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+
+    margin: auto;
+    margin-top: 2rem;
+    text-align: center;
+
+    .about {
+      align-items: center;
+    }
+  }
+
+  .foot-request {
+    margin-top: 2rem;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 424.98px) {
+  .sec1 {
+    .sec1-text {
+      transform: translateY(-32%);
+      margin-bottom: 6rem;
+
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  }
+}

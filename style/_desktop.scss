@@ -15,6 +15,7 @@ body {
 
   width: 100%;
   max-width: 1440px;
+  // min-height: 100vh;
 }
 
 /* ============================================ */
@@ -33,6 +34,10 @@ body {
   width: 100%;
   max-width: 1280px;
   margin: auto;
+}
+// .head-toogle
+.head-toogle {
+  display: none;
 }
 
 // .head-logo
@@ -127,7 +132,8 @@ body {
     gap: 1rem;
 
     h1 {
-      font-size: 2.5rem;
+      font-size: 3rem;
+      line-height: 1.2;
       font-weight: 400;
       color: #66676c;
       max-width: 15ch;
@@ -173,6 +179,8 @@ body {
 /* ============================================ */
 .sec2 {
   width: 100%;
+  max-width: 1280px;
+  margin: auto;
 
   display: flex;
   align-items: flex-start;
@@ -219,6 +227,8 @@ body {
 .sec3 {
   width: 100%;
   padding: 1rem;
+  max-width: 1280px;
+  margin: auto;
 
   display: flex;
   align-items: flex-start;
@@ -229,8 +239,8 @@ body {
   // .sec3-text
   .sec3-text {
     h2 {
-      font-weight: 600;
-      font-size: 1.5rem;
+      font-weight: 400;
+      font-size: 2.5rem;
     }
   }
 
@@ -288,8 +298,18 @@ body {
   align-items: center;
 
   width: 100%;
-  padding: 2rem 5rem;
   background: #2d314e;
+  padding: 2rem 2rem;
+}
+
+.foot-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  max-width: 1280px;
+  margin: auto;
 }
 
 // .foot-icon
@@ -303,6 +323,8 @@ body {
 
   .icon-logo {
     filter: brightness(0) invert(1);
+    min-width: 130px;
+    min-height: 20px;
   }
 
   .icon-social {
@@ -371,5 +393,12 @@ body {
 
   span {
     color: rgba(255, 255, 255, 0.66);
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1023.98px) {
+  .sec2 {
+    margin-top: -2rem;
   }
 }
