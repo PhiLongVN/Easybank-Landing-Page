@@ -82,7 +82,6 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  max-width: 1440px;
 }
 
 /* ============================================ */
@@ -195,6 +194,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
+  max-width: 1440px;
 }
 
 .sec1 {
